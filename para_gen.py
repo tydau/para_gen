@@ -12,9 +12,9 @@
 import sys
 import numpy as np
 
-start = raw_input("Starting point:\n")
-end = raw_input("Ending point:\n")
-int = raw_input("Inverval:\n")
+start = float(raw_input("Starting point:\n"))
+end = float(raw_input("Ending point:\n"))
+int = float(raw_input("Inverval:\n"))
 name = 'cellindent.txt'
 
 para_vals = np.arange(start,end,int)
