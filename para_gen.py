@@ -17,6 +17,9 @@ end = float(raw_input("Ending point:\n"))
 int = float(raw_input("Inverval:\n"))
 name = 'cellindent.txt'
 
-para_vals = np.arange(start,end,int)
+para_vals = list(np.arange(start,end,int))
+para_vals = str(para_vals).strip('[]')
 
-np.savetxt(name,para_vals)
+file = open(name,'w')
+file.write(para_vals)
+file.close()
