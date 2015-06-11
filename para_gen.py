@@ -18,12 +18,12 @@ int = float(raw_input("Inverval:\n"))
 name = 'cellindent.txt'
 
 para_vals = list(np.arange(start,end+int,int))
-parra_vals_rev = list(reversed(np.arange(start,end,int)))
-del parra_vals_rev[-1]
-para_vals.append(parra_vals_rev)
+parra_vals_rev = list(reversed(np.arange(start,end+int,int)))
 para_vals = str(para_vals).strip('[]')
-para_vals = para_vals.replace("[","")
+parra_vals_rev = str(parra_vals_rev).strip('[]')
 
 file = open(name,'w')
 file.write(para_vals)
+file.write('\n')
+file.write(parra_vals_rev)
 file.close()
