@@ -19,6 +19,7 @@ name = 'cellindent.txt'
 
 para_vals = list(np.arange(start,end+int,int))
 parra_vals_rev = list(reversed(np.arange(start,end,int)))
+del parra_vals_rev[-1]
 para_vals.append(parra_vals_rev)
 para_vals = str(para_vals).strip('[]')
 para_vals = para_vals.replace("[","")
